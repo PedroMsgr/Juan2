@@ -12,7 +12,9 @@ import java.util.Properties;
 
 public class DatabaseConnection {
 
-    private DatabaseConnection(){}
+    public DatabaseConnection(){
+
+    }
     private static Properties lb = new Properties();
     private static Connection connection = null;
 

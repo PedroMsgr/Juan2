@@ -24,6 +24,7 @@ public class LBHandleDB {
     public boolean getTablaActualizada(){return tablaActualizada;}
     public LBHandleDB() throws LBException {
         con = DatabaseConnection.getConnection();
+
         lb = DatabaseConnection.getLB();
         tablaActualizada = Boolean.getBoolean(lb.getProperty("tablaActualizada"));
         int intentosInicio = 3;
